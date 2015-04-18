@@ -1,0 +1,212 @@
+/*
+ * Nome: style.css
+ * Desenvolvido por: Rafael Damasio (Intrépido 53)
+ * Data da Criacao: 01-02-2015
+ * Copyright (c) 2015 - Construpaver
+ * Versao: 4.0.0
+ */
+ 
+/*
+FONTS
+	RobotoCondensedRegular		---> NORMAL
+	RobotoCondensedBold			---> BOLD
+	RobotoCondensedItalic		---> ITALIC
+	RobotoCondensedBoldItalic	---> BOLD ITALIC
+	RobotoCondensedLight		---> LIGHT
+	RobotoCondensedLightItalic	---> LIGHT ITALIC
+*/
+
+/********************** Tipografia, cores e fundos / Reset */
+* { font-family: Arial; margin: 0; padding: 0; list-style-type: none; list-style: none!important; font-weight:normal; text-decoration: none; border: none; outline: none; color: #000;}
+ul, ol { margin: 0;}
+a { color: #000; padding: 0; margin: 0;}
+a:hover { color: #000; text-decoration: none;}
+html { height: auto!important;}
+body { margin: 0; padding: 0;}
+
+.roboto { font-family: "RobotoCondensedRegular";}
+.robotobold { font-family: "RobotoCondensedBold";}
+.robotoitalic { font-family: "RobotoCondensedItalic";}
+.robotobolditalic { font-family: "RobotoCondensedBoldItalic";}
+.robotolight { font-family: "RobotoCondensedLight";}
+.robotolightitalic { font-family: "RobotoCondensedLightItalic";}
+
+/* HEADER */
+.header { position: relative; background-color: #F3F3F4;}
+.container-logo { width: 220px; height: 160px; position: absolute; left: 50%; margin-left: -110px; z-index: 1000;}
+.container-logo a { width: 220px; height: 160px; display: block; text-align: center; background: url(../img/logo-topo.png) no-repeat 0 0;}
+.container-logo a span { display: none;}
+
+.container-menu { height: 82px; background: url(../img/bg-menu.png) repeat-x 0 0; z-index: 120; position: relative;}
+.menu-principal { width: 950px; margin: auto; height: 82px;}
+.menu-principal ul { float: left; width: 950px;}
+.menu-principal ul li { float: left; background: url(../img/bg-menu-listra.png) no-repeat right 0; height: 82px; padding: 0; margin: 0;}
+
+.menu-1 { width: 92px; background-position: 88px 0!important;}
+.menu-1 a { width: 86px;}
+
+.menu-2 { width: 118px; background-position: 114px 0!important;}
+.menu-2 a { width: 112px;}
+
+.menu-3 { width: 144px; background: none!important;}
+.menu-3 a { width: 138px;}
+
+.menu-4 { width: 146px; float: right!important; background: none!important;}
+.menu-4 a { width: 140px; float: right!important;}
+
+.menu-5 { width: 210px; background-position: 206px 0!important; float: right!important;}
+.menu-5 a { width: 204px;}
+
+.menu-principal ul li a { display: block; text-align: center; margin: 0; font-family: "RobotoCondensedRegular"; font-size: 18px; padding-top: 14px; height: 40px; color: #FFF;}
+.menu-principal ul li a:hover, .menu-principal ul li.menu-ativo a { background: url(../img/bg-menu-hover.png) repeat-x 0 0; color: #000; box-shadow: 0 -5px 15px #000, 0 10px 20px #c0c0c0;}
+
+.container-topo { background: url(../img/bg-topo.png) repeat-x 0 bottom; height: 400px;}
+.topo { width: 998px; position: relative; z-index: 100; margin: auto;}
+.topo h1 { text-transform: uppercase; float: left; display: block; margin-top: 205px; background: url(../img/bg-h1.png) repeat-x 0 bottom; width: 100%; padding: 0; padding-bottom: 19px;}
+.topo h1 span { float: left; display: block; margin-left: 10px;}
+.topo h1 .tit-1 { font-size: 45px; color: #939598; line-height: 33px;}
+.topo h1 .tit-2 { font-size: 66px; color: #c4161c; clear: both; line-height: 51px;}
+.img-destaque { position: absolute; top: -28px; right: -139px; z-index: 110; width: 717px; height: 413px; background: url(../img/img-topo.png) no-repeat 0 0;}
+.img-destaque-home { background-image: url(../img/img-topo-home.png);}
+
+/* header alternativer */
+.header-alternative { background: none!important; width: 100%; float: left; height: 54px; position: fixed; left: 0; top: 0; opacity: 0; position: fixed; z-index: 9998; visibility: hidden; transition: opacity 0.3s linear 0.1s, visibility 0.3s linear 0.1s;}
+.header-alternative.header-visible { opacity: .90; visibility: visible; transition: opacity 0.3s linear 0.1s, visibility 0.3s linear 0.1s;}
+.header-alternative .container-logo { width: 143px; height: 51px; position: relative; left: 0; margin-left: 0; float: left;}
+.header-alternative .container-logo a { width: 143px; height: 51px; display: block; text-align: center; background: url(../img/logo-topo-2.png) no-repeat 0 0;}
+
+.header-alternative .container-menu { height: 54px; background: url(../img/bg-menu-2.png) repeat-x 0 0; z-index: 120; position: relative; box-shadow: 0 1px 3px #000;}
+.header-alternative .menu-principal { width: 950px; margin: auto; height: 54px;}
+.header-alternative .menu-principal ul { width: 710px; float: right!important; height: 54px;}
+.header-alternative .menu-principal ul li { float: left!important; background: none; height: 82px; padding: 0; margin: 0;}
+/* header alternativer */
+/* HEADER */
+
+/* BODY */
+.body-section { background-color: #D0D2D1; float: left; width: 100%; position: relative; padding-bottom: 25px;}
+.container-body { margin: auto; width: 998px; padding: 25px 0;}
+.container-body .box-home {}
+.container-body .box-home h2 { text-transform: uppercase;}
+.container-body .box-home h2 .tit-1 { font-size: 40px;}
+.container-body .box-home h2 .tit-2 { font-size: 40px;}
+
+.content-box-1 { width: 422px; height: 240px; position: relative; overflow: hidden; margin-top: 22px;}
+.content-box-1 .fb-like-box { position: absolute; top: -70px;}
+
+.box-2 { margin-top: 60px;}
+
+.content-box-2 ul { float: left; margin-top: 15px;}
+.content-box-2 ul li { float: left; margin: 0 15px;}
+.content-box-2 ul li img {}
+
+.content-box-3 ul { margin: 10px 0 0; float: left; position: relative; width: 485px; height: 384px; overflow: hidden;}
+.content-box-3 ul li { width: 465px!important; height: 364px!important; float: left!important; position: absolute!important; border: 10px solid #DCDDDE!important; overflow: hidden!important;}
+.content-box-3 ul li img { height: 100%!important; max-width: none!important;}
+#slideshow { width: 485px!important; cursor: pointer;}
+#fssPrev,
+#fssNext,
+#fssPlayPause,
+#fssList { display: none!important; }
+/* BODY */
+
+/* FOOTER */
+.footer { border-top: 4px solid #FFF; background: url(../img/bg-footer.png) repeat 0 0; width: 100%; clear: both; float: left;}
+.container-footer { margin: auto; width: 998px;}
+.container-footer .pull-right { width: 482px;}
+.menu-footer { float: left; height: 73px;}
+.menu-footer ul { margin-left: 3px;}
+.menu-footer ul li { float: left; height: 16px; border-right: 1px solid #E1BABB; margin-top: 26px; margin-right: 8px; padding-right: 8px;}
+.menu-footer ul li a { color: #FFF; font-family: "RobotoCondensedLight"; font-size: 16px; display: block; line-height: 14px;}
+.social-contact { float: left;}
+.social-contact .pg-social-face { width: 503px; padding-left: 13px; height: 258px; padding-top: 6px; background: url(../img/bg-plugin-social.png) no-repeat 0 0;}
+.contact { padding-left: 55px;}
+.contact h3 { font-size: 20px; font-weight: lighter; line-height: 20px; color: #FFF;}
+.contact .tel {}
+.contact .tel span { color: #FFF;}
+.contact .tel > span { display: block; float: left;}
+.contact .tel .tel-1 { margin-right: 8px; padding-right: 8px; border-right: 1px solid #FFF;}
+.contact .tel .ddd { font-family: "RobotoCondensedLight"; font-size: 14px;}
+.contact .tel .phone-number { font-family: "RobotoCondensedBold"; font-size: 26px;}
+.copyright-author { float: left; height: 80px; width: 998px; position: relative;}
+.copyright-author p { font-family: Tahoma; font-size: 12px; color: #fdfffe; width: 100%; text-align: center; padding-top: 31px;}
+.copyright-author .logo-intrepido { position: absolute; width: 95px; height: 25px; right: 0; top: 28px;}
+.copyright-author .logo-intrepido a { width: 95px; height: 25px; display: block; background: url(../img/logo-intrepido.png) no-repeat 0 0;}
+.copyright-author .logo-intrepido a span { display: none;}
+/* FOOTER */
+
+/* EMPREESA */
+.container-empresa {}
+.container-empresa .pull-left { width: 50%;}
+.container-empresa .pull-right { width: 50%;}
+.content-box-empresa {}
+.content-box-empresa p { text-align: justify;}
+.content-box-empresa-2 {}
+.img-enfeite-empresa { width: 289px; height: 427px; background: url(../img/bg-enfeite-empresa.png) no-repeat 0 0; margin-left: 160px;}
+/* EMPREESA */
+
+/* SERVICOS */
+.container-servicos {}
+.container-servicos .pull-left { width: 100%;}
+.box-servicos {}
+.box-servicos h2 {}
+.box-servicos h3 { font-size: 14px; font-family: Arial; font-weight: normal;}
+.link-orcamento { display: block; width: 485px; height: 49px; background: #ABADAC; font-size: 20px; color: #4e4e4e; font-family: "RobotoCondensedBold"; float: right; text-transform: uppercase; text-align: center; line-height: 49px; margin-bottom: 30px;}
+.link-orcamento:hover { cursor: pointer; color: #ABADAC; background: #4e4e4e;}
+
+.content-lista {}
+.content-lista ul { margin-top: 50px;}
+.content-lista ul li { float: left; width: 486px; margin-bottom: 65px; min-height: 350px;}
+.content-lista ul li:nth-child(even) { float: right;}
+.content-lista ul li h4 { text-transform: uppercase;}
+.content-lista ul li h4 span { font-size: 24px;}
+.content-lista ul li h4 .tit-1 { color: #585959;}
+.content-lista ul li h4 .tit-2 { color: #585959;}
+.content-lista ul li img { border: 10px solid #FFF;}
+.content-lista ul li p { text-align: justify; line-height: 22px; margin-top: 8px;}
+
+/* PORTFOLIO */
+.content-lista-portfolio ul li { float: left; width: 465px; height: 145px; min-height: 145px; margin-bottom: 65px; border: 10px solid #FFF; overflow: hidden; position: relative;}
+.content-lista-portfolio ul li img { border: none; width: 100%!important; position: absolute;}
+
+/* PORTFOLIO */
+
+/* CONTATO */
+.container-contato {}
+.box-contato {}
+.fale-conosco { display: block; background: url(../img/bg-contato.png) no-repeat 556px bottom #C0C2C1; float: left; width: 998px;}
+.fale-conosco .content-form { float: left; width: 470px; margin: 26px 0 0 24px;}
+.fale-conosco .form-group { float: left; margin-bottom: 5px; width: 100%; position: relative;}
+.fale-conosco .form-group-cidade { width: 353px;}
+.fale-conosco .form-group-estado { width: 107px; float: right;}
+.fale-conosco .form-group label { font-family: Tahoma; font-size: 14px; color: #040707;}
+.fale-conosco .form-group input, .fale-conosco .form-group select, .fale-conosco .form-group textarea { width: calc(100% - 5px); height: 33px; background: #FFF; border: none; border-radius: 0; padding: 0 0 0 5px; font-family: Tahoma; font-size: 14px; color: #040707;}
+.fale-conosco .form-group select { width: 100%; padding: 0;}
+.fale-conosco .form-group textarea { height: 186px;}
+.fale-conosco .btn { display: block; width: 470px; height: 49px; background: #ABADAC; font-size: 20px; color: #4e4e4e; font-family: "RobotoCondensedBold"; float: left; text-transform: uppercase; text-align: center; margin: 10px 0 26px; border: none; border-radius: 0; box-shadow: none; text-shadow: none;}
+.fale-conosco .btn:hover { cursor: pointer; color: #ABADAC; background: #4e4e4e;}
+
+label.error {
+	position: absolute;
+	top: 25px;
+	left: calc(100% + 10px);
+	width: calc(100% - 59px);
+	padding: 10px 35px 9px 14px;
+	margin-bottom: 20px;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+	border: 1px solid #fbeed5;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	color: #b94a48!important;
+	background-color: #f2dede;
+	border-color: #eed3d7;
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome!important;
+	font-family: Tahoma!important;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+label.error:before { content:"\f06a"; padding-right: 10px; font: normal normal normal 14px/1 FontAwesome!important;}
+/* CONTATO */

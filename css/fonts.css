@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'RobotoCondensedRegular';
+    src: url('../fonts/RobotoCondensedRegular.eot');
+    src: url('../fonts/RobotoCondensedRegular.eot') format('embedded-opentype'),
+         url('../fonts/RobotoCondensedRegular.woff2') format('woff2'),
+         url('../fonts/RobotoCondensedRegular.woff') format('woff'),
+         url('../fonts/RobotoCondensedRegular.ttf') format('truetype'),
+         url('../fonts/RobotoCondensedRegular.svg#RobotoCondensedRegular') format('svg');
+}
+@font-face {
+    font-family: 'RobotoCondensedBold';
+    src: url('../fonts/RobotoCondensedBold.eot');
+    src: url('../fonts/RobotoCondensedBold.eot') format('embedded-opentype'),
+         url('../fonts/RobotoCondensedBold.woff2') format('woff2'),
+         url('../fonts/RobotoCondensedBold.woff') format('woff'),
+         url('../fonts/RobotoCondensedBold.ttf') format('truetype'),
+         url('../fonts/RobotoCondensedBold.svg#RobotoCondensedBold') format('svg');
+}
+@font-face {
+    font-family: 'RobotoCondensedItalic';
+    src: url('../fonts/RobotoCondensedItalic.eot');
+    src: url('../fonts/RobotoCondensedItalic.eot') format('embedded-opentype'),
+         url('../fonts/RobotoCondensedItalic.woff2') format('woff2'),
+         url('../fonts/RobotoCondensedItalic.woff') format('woff'),
+         url('../fonts/RobotoCondensedItalic.ttf') format('truetype'),
+         url('../fonts/RobotoCondensedItalic.svg#RobotoCondensedItalic') format('svg');
+}
+@font-face {
+    font-family: 'RobotoCondensedBoldItalic';
+    src: url('../fonts/RobotoCondensedBoldItalic.eot');
+    src: url('../fonts/RobotoCondensedBoldItalic.eot') format('embedded-opentype'),
+         url('../fonts/RobotoCondensedBoldItalic.woff2') format('woff2'),
+         url('../fonts/RobotoCondensedBoldItalic.woff') format('woff'),
+         url('../fonts/RobotoCondensedBoldItalic.ttf') format('truetype'),
+         url('../fonts/RobotoCondensedBoldItalic.svg#RobotoCondensedBoldItalic') format('svg');
+}
+@font-face {
+    font-family: 'RobotoCondensedLight';
+    src: url('../fonts/RobotoCondensedLight.eot');
+    src: url('../fonts/RobotoCondensedLight.eot') format('embedded-opentype'),
+         url('../fonts/RobotoCondensedLight.woff2') format('woff2'),
+         url('../fonts/RobotoCondensedLight.woff') format('woff'),
+         url('../fonts/RobotoCondensedLight.ttf') format('truetype'),
+         url('../fonts/RobotoCondensedLight.svg#RobotoCondensedLight') format('svg');
+}
+@font-face {
+    font-family: 'RobotoCondensedLightItalic';
+    src: url('../fonts/RobotoCondensedLightItalic.eot');
+    src: url('../fonts/RobotoCondensedLightItalic.eot') format('embedded-opentype'),
+         url('../fonts/RobotoCondensedLightItalic.woff2') format('woff2'),
+         url('../fonts/RobotoCondensedLightItalic.woff') format('woff'),
+         url('../fonts/RobotoCondensedLightItalic.ttf') format('truetype'),
+         url('../fonts/RobotoCondensedLightItalic.svg#RobotoCondensedLightItalic') format('svg');
+}
