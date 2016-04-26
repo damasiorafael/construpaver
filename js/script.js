@@ -9,8 +9,13 @@ $(document).ready(function(){
 	
 	$(".portfolio").colorbox({
 		rel:'portfolio',
-		width:800
+		width:800,
+		title: function(){
+  			var url = $(this).attr('data-title');
+			return url;
+		}
 	});
+	
 	$("#slideshow").click(function(){
 		window.location = "portfolio.php";
 	});

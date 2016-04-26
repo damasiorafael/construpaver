@@ -24,15 +24,20 @@
             </div>
             <div class="content-portfolio content-lista content-lista-portfolio">
             	<ul>
+					<?php
+						$sqlConsulta = "SELECT * FROM portfolio";
+						$resultConsulta = $PDO->query($sqlConsulta);
+						while($consulta = $resultConsulta->fetch(PDO::FETCH_OBJ)){
+					?>
                 	<?php
-						$sqlConsulta 	= "SELECT * FROM portfolio";
+						/*$sqlConsulta 	= "SELECT * FROM portfolio";
 						$resultConsulta = consulta_db($sqlConsulta);
 						$num_rows 		= mysql_num_rows($resultConsulta);
-						while($consulta = mysql_fetch_object($resultConsulta)){
+						while($consulta = mysql_fetch_object($resultConsulta)){*/
 					?>
 					<li>
-                    	<a href="uploads/<?php echo $consulta->imagem; ?>" title="<span id='title-foto'><?php echo utf8_encode($consulta->tit_imagem); ?></span><span id='texto-foto'><?php echo utf8_encode($consulta->tx_imagem); ?></span>" class="portfolio">
-							<img src="uploads/<?php echo $consulta->imagem; ?>" alt="Img estaque" />
+                    	<a href="uploads/<?php echo $consulta->imagem; ?>" title="<?php echo utf8_encode($consulta->tit_imagem); ?>" data-title="<span id='title-foto'><?php echo utf8_encode($consulta->tit_imagem); ?></span><span id='texto-foto'><?php echo utf8_encode($consulta->tx_imagem); ?></span>" class="portfolio">
+							<img src="uploads/<?php echo $consulta->imagem; ?>" alt="<?php echo utf8_encode($consulta->tit_imagem); ?> <?php echo utf8_encode($consulta->tx_imagem); ?>" />
                         </a>
 					</li>
 					<?php

@@ -4,24 +4,60 @@ session_start();
 //error_reporting(E_ALL);
 error_reporting(E_ERROR);
 
-if($_SERVER['SERVER_NAME'] == "localhost"){
-	define( 'MYSQL_HOST', 'localhost' );
-	define( 'MYSQL_USER', 'root' );
-	define( 'MYSQL_PASSWORD', '' );
-	define( 'MYSQL_DB_NAME', 'construpaver' );
+/*$host 	= "dbmy0044.whservidor.com";
+https://admin.mysql.uhserver.com/
+$user	= "construpav";
+$pass	= "@construp";
+$bd		= "construpav";*/
+
+/*if($_SERVER['SERVER_NAME'] == 'localhost'){
+	$banco = "construpav";
+	$usuario = "root";
+	$senha = "";
+	$hostname = "localhost";
 } else {
-	define( 'MYSQL_HOST', 'localhost' );
-	define( 'MYSQL_USER', 'constrrdj3XP7Ekh' );
-	define( 'MYSQL_PASSWORD', 'JtgynmWj6A7lh5R' );
-	define( 'MYSQL_DB_NAME', 'construpaver_com_br' );
+	$banco = "construpav";
+	$usuario = "construpav";
+	$senha = "@leandro2015";
+	$hostname = "54.207.7.66";
+}*/
+/*
+if($_SERVER['SERVER_NAME'] == 'localhost'){
+  $banco = "construpav";
+  $usuario = "root";
+  $senha = "";
+  $hostname = "localhost";
+} else {
+  $banco = "construpaver";
+  $usuario = "pgsskroton";
+  $senha = "PgssKroton.2015";
+  //$hostname = "mysql.weblink.com.br";
+  $hostname = "pgsskroton.cfcpvwksy2ah.sa-east-1.rds.amazonaws.com";
 }
 
-try{
-	$PDO = new PDO( 'mysql:host=' . MYSQL_HOST . ';dbname=' . MYSQL_DB_NAME, MYSQL_USER, MYSQL_PASSWORD );
+$con = mysql_connect($hostname,$usuario,$senha);
+$db = mysql_select_db($banco);*/
+
+if($_SERVER['SERVER_NAME'] == "localhost"){
+  $host   = "localhost";
+  $user = "root";
+  $pass = "";
+  $bd   = "construpaver";
+} else {
+  /*
+  $host   = "localhost";
+  $user = "pgsskroton";
+  $pass = "PgssKroton@2015";
+  $bd   = "psskroton";
+  */
+  $host   = "pgsskroton.cfcpvwksy2ah.sa-east-1.rds.amazonaws.com";
+  $user = "pgsskroton";
+  $pass = "PgssKroton.2015";
+  $bd   = "construpaver";
 }
-catch ( PDOException $e ){
-	echo 'Erro ao conectar com o MySQL: ' . $e->getMessage();
-}
+
+$con = mysql_connect($host,$user,$pass);
+$db = mysql_select_db($bd);
 
 function protecao($string){
 

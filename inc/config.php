@@ -6,15 +6,6 @@ error_reporting(E_ERROR);
 $_SESSION["num_session"] = session_id();
 $num_session = sha1($_SESSION["num_session"]);
 
-if ($_SERVER['SERVER_NAME'] == 'server' ) {
-	$con = mysql_pconnect('server','root','admin');
-	$db = mysql_select_db('kilds');
-} else {
-	$con = mysql_pconnect('dbmy0011.whservidor.com','kilds1','n8W9gpYm');
-	$db = mysql_select_db('kilds1');
-}
-
-
 function protecao($string){
 
   // Passando a primeira letra pra MaiÃºsculo e o restante pra minÃºsculo 

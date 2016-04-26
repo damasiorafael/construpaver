@@ -34,7 +34,7 @@
 					<div class="tel">
                     	<span class="tel-1">
                         	<span class="ddd">43</span>
-                            <span class="phone-number">4141-5557</span>
+                            <span class="phone-number">3328-3917</span>
                         </span>
                         <span class="tel-2">
                         	<span class="ddd">43</span>

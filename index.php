@@ -59,15 +59,20 @@
                 </h2>
                 <div class="content-box-3">
                 	<ul id="slideshow">
+						<?php
+							$sqlConsulta = "SELECT * FROM portfolio";
+							$resultConsulta = $PDO->query($sqlConsulta);
+							while($consulta = $resultConsulta->fetch(PDO::FETCH_OBJ)){
+						?>
                     	<?php
-							$sqlConsulta 	= "SELECT * FROM portfolio";
+							/*$sqlConsulta 	= "SELECT * FROM portfolio";
 							$resultConsulta = consulta_db($sqlConsulta);
 							$num_rows 		= mysql_num_rows($resultConsulta);
-							while($consulta = mysql_fetch_object($resultConsulta)){
+							while($consulta = mysql_fetch_object($resultConsulta)){*/
 						?>
-                    	<li>
-                        	<img src="uploads/<?php echo $consulta->imagem; ?>" alt="Img estaque" width="600" />
-                        </li>
+								<li>
+									<img src="uploads/<?php echo $consulta->imagem; ?>" alt="Img estaque" width="600" />
+								</li>
                         <?php
 							}
 						?>
