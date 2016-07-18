@@ -27,25 +27,25 @@
             </div>
             <div class="box-home box-2">
             	<h2>
-                	<span class="tit-1 robotolight">já</span>
-                	<span class="tit-2 robotobold">atendemos</span>
+                	<span class="tit-1 robotolight">alguns</span>
+                	<span class="tit-2 robotobold">clientes</span>
                 </h2>
                 <div class="content-box-2">
                 	<ul>
                     	<li>
-                        	<img src="img/logo-chevrolet.png" alt="Chevrolet" />
+                        	<img src="img/logo-cacique.png" alt="Cacique" />
                         </li>
                         <li>
-                        	<img src="img/logo-caixa.png" alt="Caixa" />
+                        	<img src="img/logo-frisia.png" alt="Frísia" />
                         </li>
                         <li>
-                        	<img src="img/logo-vale.png" alt="Vale" />
+                        	<img src="img/logo-mrv.png" alt="MRV" />
                         </li>
                         <li>
-                        	<img src="img/logo-fiat.png" alt="Fiat" />
+                        	<img src="img/logo-ipiranga.png" alt="Ipiranga" />
                         </li>
                         <li>
-                        	<img src="img/logo-bb.png" alt="Banco do Brasil" />
+                        	<img src="img/logo-sicoob.png" alt="Sicoob" />
                         </li>
                     </ul>
                 </div>
